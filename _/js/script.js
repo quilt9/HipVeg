@@ -1,1 +1,1 @@
-script.js
+function test(){return"Trying really hard"}function test(){return"Hi there!"}
