@@ -1,1 +1,1 @@
-function test(){return"Trying really hard"}function test(){return"Hi there!"}
+function test(){return"Hi there!"}
