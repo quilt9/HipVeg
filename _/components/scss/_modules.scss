@@ -1,5 +1,16 @@
+// Left panel
+.title {
+	width: 50%;
+	background: $pink;
+}
+
+// Middle panel
+.recipe {
+	width: 50%;
+}
+
 // Right panel
-._25 {
-	width: 25%;
-	
+.misc {
+	width: 100%;
+	background: $lime;
 }

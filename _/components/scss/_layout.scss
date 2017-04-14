@@ -1,5 +1,39 @@
-.layout {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 940px;
+//Susy setup ===========================================
+$total-columns	: 12;
+$column-width		: 4em;
+$gutter-width		:	1em;
+$grid-padding		:	$gutter-width;
+
+@include border-box-sizing;
+
+$small					: 30em;
+$medium					: 47em;
+$large					: 75em;
+
+//Content ===========================================
+
+/*
+#main {
+	height: 100vh;
+	padding: 8%;
+  background: $deep-purple;
+
+  @include display-flex;
+  @include align-items(stretch);
+  @include align-content(center);
 }
+*/
+
+.layout {
+	@include container;
+	height: 100vh;
+	padding: 8%;
+
+	.primary {
+		@include at-breakpoint($medium) {
+			@include span-columns(8,12);
+			background: $blue;
+		}
+	}
+}
+
