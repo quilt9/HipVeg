@@ -7,7 +7,24 @@ body {
 	font-size: 1.2rem;
 	line-height: 160%;
 	color: $blue-grey;
-	background: $deep-purple;
+	margin: 0;
+}
+
+video { 
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: 100%;
+height: auto;
+z-index: -100;
+-moz-transform: translateX(-50%) translateY(-50%);
+-ms-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url('../../assets/img/muffin.png') no-repeat; background-size: cover;  -webkit-transition: 1s opacity; transition: 1s opacity;
+background-color: red !important;
 }
 
 #{headings()} {
@@ -18,9 +35,18 @@ body {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	line-height: 130%;
+	margin-top: 0;
+	padding-top: 0;
 	color: $lime;
+}
+
+h3 {
+
+	a {
+		padding: 5%;
+	}
 }
 
 

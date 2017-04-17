@@ -25,14 +25,25 @@ $large					: 75em;
 */
 
 .layout {
-	@include container;
+	//@include container;
 	height: 100vh;
 	padding: 8%;
-
+	
 	.primary {
-		@include at-breakpoint($medium) {
-			@include span-columns(8,12);
+		width: 33%;
+		padding: 2%;
+		background: rgba($black, 0.3);
 		}
+
+	a {
+		display: inline-block;
+		color: $yellow;
+		text-decoration: none;
+		background: rgba($black, 0.5);
+
+		&:hover {
+				background: rgba($black, 0.9);
+			}
 	}
 }
 
