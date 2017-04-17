@@ -1,16 +1,20 @@
 // Left panel
 .title {
 	width: 50%;
-	background: $pink;
+	display: inline;
+	float: left;
 }
 
 // Middle panel
 .recipe {
 	width: 50%;
+	display: inline;
+	float: left;
 }
 
 // Right panel
 .misc {
 	width: 100%;
 	background: $lime;
+	float: left;
 }

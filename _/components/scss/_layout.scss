@@ -32,7 +32,6 @@ $large					: 75em;
 	.primary {
 		@include at-breakpoint($medium) {
 			@include span-columns(8,12);
-			background: $blue;
 		}
 	}
 }
