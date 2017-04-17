@@ -2,6 +2,16 @@
 	display: flex;		
 }
 
+/*
+.container {
+	display: none;
+}
+*/
+
+.show {
+	display: none;
+}
+
 #ingredients,
 #instructions {
 	width: 50%;
