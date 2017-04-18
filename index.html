@@ -8,25 +8,54 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="#" class="home">Lemon Poppyseed Muffins (vegan)</a>
-			<a href="#" class="ingredients panel">See Ingredients</a>
-			<a href="#" class="instruction panel">See Instructions</a>
-			<a href="#" class="about-site panel">About this Site</a>
-			<div id="display-content"></div>
-			<div id="ingredients-content">
-				<ul>
-				<li>300g all purpose flour</li>
-				<li>230g apple sauce</li>
-				<li>300g coconut milk</li>
-				<li>zest and juice of 2 lemons</li>
-				<li>2 tbsp poppyseed</li>
-				<li>1 tbsp baking powder</li>
-			</ul>
-			</div>
-		</nav>
-	</header>
+	<section class="layout">
+		<div class="primary">
+			<article class="title">
+				<p>
+					<a href="#" class="home">Lemon Poppyseed Muffins (vegan)</a>
+				</p>
+				<p>
+					More YouTube video can be found on <a href="">Peaceful Cuisine</a>
+				</p>
+			</article>
+			<article class="ingredients">
+				<p>
+					<a href="#" class="ingredients panel">See Ingredients</a>
+				</p>
+				<p>
+					<ul>
+						<li>300g all purpose flour</li>
+						<li>230g apple sauce</li>
+						<li>300g coconut milk</li>
+						<li>zest and juice of 2 lemons</li>
+						<li>2 tbsp poppyseed</li>
+						<li>1 tbsp baking powder</li>
+					</ul>
+				</p>
+			</article>
+			<article class="instructions">
+				<p>
+					<a href="#" class="instruction panel">See Instructions</a>
+				</p>
+				<p>
+					<ol id="instructions-content">
+						<li>combine all the ingredients together in a bowl.</li>
+						<li>mix the mixture and pour it into a baking tin.</li>
+						<li>bake at 350F/180C for 30 min</li>
+					</ol>
+				</p>
+			</article>
+			<article class="about-site">
+				<p>
+					<a href="#" class="about-site panel">About Site</a>
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quis velit earum aliquam labore accusantium. Praesentium architecto culpa neque sequi veritatis, rerum temporibus quidem laudantium provident ea. Sint, impedit quam?
+				</p>
+			</article>
+			<button>Pause</button>
+		</div><!--primary-->
+	</section>
 	<section>
 		<video playsinline autoplay muted loop poster="assets/img/muffin.png" id="bgvid">
 			<source src="assets/video/muffin.webm" type="video/webm">
