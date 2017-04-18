@@ -5,15 +5,16 @@ $("#ingredients-trigger").click(function(){
 	
 })
 */
+/*
 $(function() {
 
 	var displayPanel = document.getElementById("display-content");
 	var ingredientContent = document.getElementById("ingredients-content").innerHTML;
 
   $('.panel').click(function(event) {
-  	/*
+  	
   	alert(displayPanel);
-  	*/
+  	
   	  	displayPanel.innerHTML=ingredientContent;
 
        if($("displayPanel").hasClass("show"))
@@ -35,3 +36,4 @@ $(function() {
   });
   
 });
+*/

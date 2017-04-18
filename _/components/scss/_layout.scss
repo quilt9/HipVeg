@@ -25,9 +25,9 @@ $large					: 75em;
 */
 
 .layout {
-	//@include container;
+	@include container;
 	height: 100vh;
-	//padding: 8%;
+	padding: 8% 0;
 	
 	.primary {
 		width: 33%;

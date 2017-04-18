@@ -8,6 +8,7 @@ body {
 	line-height: 160%;
 	color: $blue-grey;
 	margin: 0;
+  border-top: $lime 10px solid;
 }
 
 header {
@@ -20,7 +21,6 @@ header {
   margin: 0;
   z-index: 9999;
   background-color: rgba($black, .35);
-  border-top: $lime 10px solid;
 }
 
 nav {
@@ -57,19 +57,19 @@ nav {
 }
 
 video { 
-position: fixed;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: 100%;
-height: auto;
-z-index: -100;
--moz-transform: translateX(-50%) translateY(-50%);
--ms-transform: translateX(-50%) translateY(-50%);
--webkit-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-background-color: $black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: $black;
 }
 
 #{headings()} {
