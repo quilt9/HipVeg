@@ -8,11 +8,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 <body>
-	<video playsinline autoplay muted loop poster="assets/img/muffin.png" id="bgvid">
-		<source src="assets/video/muffin.webm" type="video/webm">
-		<source src="assets/video/muffin.mp4" type="video/mp4">
-	</video>
-
+	<header>
+		<nav>
+			<a href="#" class="home">Lemon Poppyseed Muffins (vegan)</a>
+			<a href="#" class="ingredients panel">See Ingredients</a>
+			<a href="#" class="instruction panel">See Instructions</a>
+			<a href="#" class="about-site panel">About this Site</a>
+			<div id="display-content"></div>
+			<div id="ingredients-content">
+				<ul>
+				<li>300g all purpose flour</li>
+				<li>230g apple sauce</li>
+				<li>300g coconut milk</li>
+				<li>zest and juice of 2 lemons</li>
+				<li>2 tbsp poppyseed</li>
+				<li>1 tbsp baking powder</li>
+			</ul>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<video playsinline autoplay muted loop poster="assets/img/muffin.png" id="bgvid">
+			<source src="assets/video/muffin.webm" type="video/webm">
+			<source src="assets/video/muffin.mp4" type="video/mp4">
+		</video>
+	</section>
+	<!--
 	<div class="layout">
 		<div class="primary">
 			<h1>Lemon Poppyseed Muffins (vegan)</h1>
@@ -29,7 +50,10 @@
 							<li>1 tbsp baking powder</li>
 						</ul>
 					</div><!--container-->
+	
+	<!--
 				</div><!--ingredients-->
+	<!--
 				<div id="instructions">
 					<h3 id="instructions-trigger"><a href="#">See Instructions</a></h3>
 						<ol id="instructions-content">
@@ -38,11 +62,17 @@
 							<li>bake at 350F/180C for 30 min</li>
 						</ol>
 					</div><!--instructions-->
+		<!--
 				</div><!--main-->
+		<!--
 		</div><!--primary-->
+	
+	<!--
 		<div class="secondary">
 			<article class="misc"></article>
 		</div><!--secondary-->
+	
+	<!--
 	</div><!--layout-->
 	<script src="_/js/script.js"></script>
 	<script src="http://localhost:35729/livereload.js"></script>

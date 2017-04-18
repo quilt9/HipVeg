@@ -8,14 +8,18 @@
 }
 */
 
+nav #display-content .show{
+	display: block;
+}
+
+/*
 .show {
 	display: none;
 }
-
-#ingredients,
-#instructions {
-	width: 50%;
-	flex: 1;
+*/
+.panel {
+	height: 60px;
+  width: 60px;
 }
 
 .misc {
