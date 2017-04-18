@@ -667,16 +667,42 @@ a {
 }
 /* line 58, ../components/scss/_base.scss */
 a:hover {
-  -moz-transition: all 1.5s ease-out;
-  -o-transition: all 1.5s ease-out;
-  -webkit-transition: all 1.5s ease-out;
-  transition: all 1.5s ease-out;
-  -webkit-transition: all 3s;
-  -moz-transition: all 3s;
-  -ms-transition: all 3s;
-  -o-transition: all 3s;
-  transition: all 3s;
-  background: rgba(0, 0, 0, 0.9);
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 64, ../components/scss/_base.scss */
+button {
+  display: block;
+  width: 100%;
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+/* line 77, ../components/scss/_base.scss */
+button:hover {
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 83, ../components/scss/_base.scss */
+.stopfade {
+  opacity: .8;
 }
 
 /*
@@ -745,12 +771,6 @@ a:hover {
   }
 }
 /* line 1, ../components/scss/_modules.scss */
-.article {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* line 6, ../components/scss/_modules.scss */
 .content {
   display: none;
 }

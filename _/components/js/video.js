@@ -1,5 +1,5 @@
 var video = document.getElementById("bgvid"),
-pauseButton = document.querySelector("#polina button");
+pauseButton = document.querySelector(".primary button");
 
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
     vid.removeAttribute("autoplay");
