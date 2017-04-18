@@ -1,37 +1,25 @@
-/*
-$("#ingredients-trigger").click(function(){
-	
-		$(".container").toggleClass("show").fadeIn(3000);
-	
-})
-*/
+// Add trigger to display content
 $(function() {
 
-	var displayPanel = document.getElementById("display-content");
-	var ingredientContent = document.getElementById("ingredients-content").innerHTML;
+  $(".trigger").click(function(event) {
+  
+    var contentElement = this.nextElementSibling; // Variable for the content element
 
-  $('.panel').click(function(event) {
-  	/*
-  	alert(displayPanel);
-  	*/
-  	  	displayPanel.innerHTML=ingredientContent;
-
-       if($("displayPanel").hasClass("show"))
-      {
-         // alert();
-       $("displayPanel").slideToggle("slow", function() { 
-         $("displayPanel").removeClass('show');
+    // Check the class status 
+    if($(contentElement).hasClass("content")){
+     
+      $(contentElement).slideToggle("slow", function() { 
+        $(contentElement).removeClass('content');
       });
-        
-      } else {
-          
-          //alert('no class');
-      $("displayPanel").slideToggle("slow", function() { 
-         $("displayPanel").addClass('show'); 
+      
+    } else {  
 
+      $(contentElement).slideToggle("slow", function() { 
+        $(contentElement).addClass('content'); 
       });
-      }
-		
+
+    }
+      
   });
   
 });

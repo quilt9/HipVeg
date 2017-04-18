@@ -6,13 +6,13 @@ body {
 	font-family: $font-secondary;
 	font-size: 1.5rem;
 	line-height: 160%;
-	color: rgba($white, 70);
+	color: $fade-text;
 	margin: 0;
 }
 
 article {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  //margin-bottom: 2rem;
 }
 
 video { 
@@ -28,8 +28,7 @@ z-index: -100;
 -ms-transform: translateX(-50%) translateY(-50%);
 -webkit-transform: translateX(-50%) translateY(-50%);
 transform: translateX(-50%) translateY(-50%);
-background: url('../../assets/img/muffin.png') no-repeat; 
-background-size: cover;  
+background: $black;  
 -webkit-transition: 1s opacity; 
 transition: 1s opacity;
 }
@@ -37,7 +36,7 @@ transition: 1s opacity;
 #{headings()} {
 	font-family: $font-primary;
 	font-weight: normal;
-	color: $yellow;
+	color: $fade-text;
 	@include text-shadow($black 1px 1px);
 }
 
@@ -49,9 +48,24 @@ h1 {
 	color: $lime;
 }
 
+ol {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+
+  li span {
+    position: relative; 
+    left: -25px;
+  }
+}
+
 a {
     //display: in-line block;
-    color: $yellow;
+    color: $fade-link;
     text-decoration: none;
     //background: rgba($black, 0.5);
 
@@ -66,10 +80,10 @@ button {
   width: 100%;
   padding: .4rem;
   border: none; 
-  margin: 1rem auto; 
+  margin: 3rem auto; 
   font-size: 1.3rem;
   background: rgba(255,255,255,0.23);
-  color: #fff;
+  color: rgba($white, .7);
   border-radius: 3px; 
   cursor: pointer;
   @include single-transition(all, 1s, ease-out);

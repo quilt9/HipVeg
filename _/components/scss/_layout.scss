@@ -1,21 +1,8 @@
 //Content ===========================================
 
-/*
-#main {
-	height: 100vh;
-	padding: 8%;
-  background: $deep-purple;
-
-  @include display-flex;
-  @include align-items(stretch);
-  @include align-content(center);
-}
-*/
-
 .layout {
 		display: table;
 		padding: 2rem;
-		margin: 2rem;
 		width: 33%;
 		//height: 100%;
 		background: rgba($black, 0.3);
@@ -35,7 +22,27 @@
 		}
 }
 
-@media (max-device-width: 800px) {
+//Media query ===========================================
+
+@media only screen 
+	and (min-device-width: 681px)
+	and (max-device-width: 1024px) {
+	body {
+		font-size: 1.25rem;
+
+		h1 {
+			font-size: 1.75rem;
+		}
+
+		.layout {
+			width: 50%;
+			display: table;
+		}
+	}
+
+}
+
+@media (max-device-width: 680px) {
 	body { 
 		background: url("../../assets/img/muffin.png") #000 no-repeat center center fixed; 
 		background-size: cover; 
@@ -46,13 +53,17 @@
 		display: none;
 	}
 	.layout {
-		display: block;
+		display: table;
 		width: 100%;
 		margin: 0;
 		float: none;
 
 		.primary {
 			display: block;
+
+			article {
+				margin-top: 1rem;
+			}
 
 			h1 {
 				font-size: 1.25rem;
