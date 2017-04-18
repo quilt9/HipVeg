@@ -1,29 +1,8 @@
-#main {
-	display: flex;		
+.article {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
-/*
-.container {
+.content {
 	display: none;
-}
-*/
-
-nav #display-content .show{
-	display: block;
-}
-
-/*
-.show {
-	display: none;
-}
-*/
-.panel {
-	height: 60px;
-  width: 60px;
-}
-
-.misc {
-	//width: 100%;
-	background: $lime;
-	float: left;
 }

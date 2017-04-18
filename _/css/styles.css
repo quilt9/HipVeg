@@ -611,78 +611,39 @@ template {
 /* line 5, ../components/scss/_base.scss */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 160%;
-  color: #607d8b;
+  color: white;
   margin: 0;
 }
 
 /* line 13, ../components/scss/_base.scss */
-header {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.35);
-  border-top: #cddc39 10px solid;
+article {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-/* line 26, ../components/scss/_base.scss */
-nav {
-  margin: 0 10px;
-}
-/* line 29, ../components/scss/_base.scss */
-nav a {
-  color: rgba(255, 235, 59, 0.75);
-  line-height: 81px;
-  letter-spacing: 2px;
-  text-align: center;
-  text-decoration: none;
-  height: 80px;
-  padding: 0 0 0 3rem;
-  margin: 0 10px;
-}
-/* line 40, ../components/scss/_base.scss */
-nav ul {
-  display: none;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 1rem;
-  width: 33%;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: display .3s;
-}
-/* line 50, ../components/scss/_base.scss */
-nav li {
-  display: block;
-  position: relative;
-  margin: 2%;
-  padding: 1%;
-  color: #a19100;
-}
-
-/* line 59, ../components/scss/_base.scss */
+/* line 18, ../components/scss/_base.scss */
 video {
   position: fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  width: 100%;
+  width: auto;
   height: auto;
   z-index: -100;
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background-color: #000000;
+  background: url("../../assets/img/muffin.png") no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
 }
 
-/* line 75, ../components/scss/_base.scss */
+/* line 37, ../components/scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Crafty Girls", cursive;
   font-weight: normal;
@@ -690,34 +651,32 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: #000000 1px 1px;
 }
 
-/* line 82, ../components/scss/_base.scss */
+/* line 44, ../components/scss/_base.scss */
 h1 {
   font-size: 2.5rem;
   line-height: 130%;
-  margin-top: 0;
-  padding-top: 0;
+  margin: 1% 0;
+  padding: 0;
   color: #cddc39;
 }
 
-/* line 92, ../components/scss/_base.scss */
-h3 a {
-  padding: 5%;
+/* line 52, ../components/scss/_base.scss */
+a {
+  color: #ffeb3b;
+  text-decoration: none;
 }
-
-/* line 97, ../components/scss/_base.scss */
-:hover {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* line 14, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/susy-2.2.12/sass/susy/language/susyone/_grid.scss */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 58, ../components/scss/_base.scss */
+a:hover {
+  -moz-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -ms-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 /*
@@ -731,72 +690,67 @@ h3 a {
   @include align-content(center);
 }
 */
-/* line 27, ../components/scss/_layout.scss */
+/* line 15, ../components/scss/_layout.scss */
 .layout {
-  *zoom: 1;
-  max-width: 61em;
-  _width: 61em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100vh;
-}
-/* line 38, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-.layout:after {
-  content: "";
   display: table;
-  clear: both;
-}
-/* line 31, ../components/scss/_layout.scss */
-.layout .primary {
   padding: 2rem;
   margin: 2rem;
   width: 33%;
-  height: 100%;
   background: rgba(0, 0, 0, 0.3);
   float: right;
+  height: 100vh;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 40, ../components/scss/_layout.scss */
-.layout a {
-  display: inline-block;
-  color: #ffeb3b;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5);
+/* line 27, ../components/scss/_layout.scss */
+.layout .primary {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
 }
-/* line 46, ../components/scss/_layout.scss */
-.layout a:hover {
-  background: rgba(0, 0, 0, 0.9);
+/* line 33, ../components/scss/_layout.scss */
+.layout .secondary {
+  display: table-footer-group;
 }
 
+@media (max-device-width: 800px) {
+  /* line 39, ../components/scss/_layout.scss */
+  body {
+    background: url("../../assets/img/muffin.png") #000 no-repeat center center fixed;
+    background-size: cover;
+    font-size: 1rem;
+  }
+
+  /* line 44, ../components/scss/_layout.scss */
+  #bgvid,
+  button {
+    display: none;
+  }
+
+  /* line 48, ../components/scss/_layout.scss */
+  .layout {
+    display: block;
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+  /* line 54, ../components/scss/_layout.scss */
+  .layout .primary {
+    display: block;
+  }
+  /* line 57, ../components/scss/_layout.scss */
+  .layout .primary h1 {
+    font-size: 1.25rem;
+  }
+}
 /* line 1, ../components/scss/_modules.scss */
-#main {
-  display: flex;
+.article {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-/*
-.container {
-	display: none;
-}
-*/
-/* line 11, ../components/scss/_modules.scss */
-nav #display-content .show {
-  display: block;
-}
-
-/*
-.show {
-	display: none;
-}
-*/
-/* line 20, ../components/scss/_modules.scss */
-.panel {
-  height: 60px;
-  width: 60px;
-}
-
-/* line 25, ../components/scss/_modules.scss */
-.misc {
-  background: #cddc39;
-  float: left;
+/* line 6, ../components/scss/_modules.scss */
+.content {
+  display: none;
 }

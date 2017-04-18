@@ -8,21 +8,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
 <body>
+	<video playsinline autoplay muted loop poster="../../assets/img/muffin.png" id="bgvid">
+		<source src="assets/video/muffin.webm" type="video/webm">
+		<source src="assets/video/muffin.mp4" type="video/mp4">
+	</video>
 	<section class="layout">
 		<div class="primary">
 			<article class="title">
+				<h1>
+					Lemon Poppyseed Muffins (vegan)
+				</h1>
 				<p>
-					<a href="#" class="home">Lemon Poppyseed Muffins (vegan)</a>
-				</p>
-				<p>
-					More YouTube video can be found on <a href="">Peaceful Cuisine</a>
+					Recipe and video created by Ryoya Takashima. Want more yummy video, go to <a href="http://www.peacefulcuisine.com/" target="_blank">Peaceful Cuisine</a>.
 				</p>
 			</article>
 			<article class="ingredients">
 				<p>
 					<a href="#" class="ingredients panel">See Ingredients</a>
 				</p>
-				<p>
+				<div class="content">
 					<ul>
 						<li>300g all purpose flour</li>
 						<li>230g apple sauce</li>
@@ -31,78 +35,39 @@
 						<li>2 tbsp poppyseed</li>
 						<li>1 tbsp baking powder</li>
 					</ul>
-				</p>
+				</div>
 			</article>
 			<article class="instructions">
 				<p>
 					<a href="#" class="instruction panel">See Instructions</a>
 				</p>
-				<p>
-					<ol id="instructions-content">
+				<div class="content">
+					<ol id="instructions-content" >
 						<li>combine all the ingredients together in a bowl.</li>
 						<li>mix the mixture and pour it into a baking tin.</li>
 						<li>bake at 350F/180C for 30 min</li>
 					</ol>
-				</p>
+				</div>
 			</article>
 			<article class="about-site">
 				<p>
 					<a href="#" class="about-site panel">About Site</a>
 				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quis velit earum aliquam labore accusantium. Praesentium architecto culpa neque sequi veritatis, rerum temporibus quidem laudantium provident ea. Sint, impedit quam?
-				</p>
+				<div class="content">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quis velit earum aliquam labore accusantium. Praesentium architecto culpa neque sequi veritatis, rerum temporibus quidem laudantium provident ea. Sint, impedit quam?
+					</p>
+				</div>
 			</article>
 			<button>Pause</button>
 		</div><!--primary-->
-	</section>
-	<section>
-		<video playsinline autoplay muted loop poster="assets/img/muffin.png" id="bgvid">
-			<source src="assets/video/muffin.webm" type="video/webm">
-			<source src="assets/video/muffin.mp4" type="video/mp4">
-		</video>
-	</section>
-	<!--
-	<div class="layout">
-		<div class="primary">
-			<h1>Lemon Poppyseed Muffins (vegan)</h1>
-			<div id="main">
-				<div id="ingredients">
-					<h3 id="ingredients-trigger"><a href="#">See Ingredients</a></h3>
-					<div class="container show">
-						<ul id="ingredients-content">
-							<li>300g all purpose flour</li>
-							<li>230g apple sauce</li>
-							<li>300g coconut milk</li>
-							<li>zest and juice of 2 lemons</li>
-							<li>2 tbsp poppyseed</li>
-							<li>1 tbsp baking powder</li>
-						</ul>
-					</div><!--container-->
-	
-	<!--
-				</div><!--ingredients-->
-	<!--
-				<div id="instructions">
-					<h3 id="instructions-trigger"><a href="#">See Instructions</a></h3>
-						<ol id="instructions-content">
-							<li>combine all the ingredients together in a bowl.</li>
-							<li>mix the mixture and pour it into a baking tin.</li>
-							<li>bake at 350F/180C for 30 min</li>
-						</ol>
-					</div><!--instructions-->
 		<!--
-				</div><!--main-->
-		<!--
-		</div><!--primary-->
-	
-	<!--
 		<div class="secondary">
-			<article class="misc"></article>
+			<p>
+				For more delicious video, go to <a href="">Peaceful Cuisine</a>.
+			</p>
 		</div><!--secondary-->
-	
-	<!--
-	</div><!--layout-->
+	</section>
 	<script src="_/js/script.js"></script>
 	<script src="http://localhost:35729/livereload.js"></script>
 </body>
