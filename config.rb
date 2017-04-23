@@ -1,6 +1,6 @@
 require "susy"
-css_dir = "_/css"
+css_dir = "http://quilt9.github.io/HipVeg/_/css"
 sass_dir = "_/components/scss"
-javascripts_dir = "_/js"
+javascripts_dir = "http://quilt9.github.io/HipVeg/_/js"
 output_style = :compressed
 relative_assets = true;
